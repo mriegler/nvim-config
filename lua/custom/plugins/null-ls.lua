@@ -15,7 +15,9 @@ return {
     local completion = nls.builtins.completion
     return {
       sources = {
-        formatting.stylua
+        formatting.stylua,
+        formatting.gofumpt,
+        formatting.goimports_reviser,
       }
     }
   end

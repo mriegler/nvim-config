@@ -8,6 +8,10 @@ opt.hlsearch = false
 
 -- Make line numbers default
 opt.number = true
+opt.relativenumber = true
+
+-- mode already in status line
+opt.showmode = false
 
 -- Enable mouse mode
 opt.mouse = "a"
@@ -35,7 +39,7 @@ opt.updatetime = 250
 opt.timeoutlen = 300
 
 -- Set completeopt to have a better completion experience
-opt.completeopt = "menuone,noselect"
+opt.completeopt = "menu,menuone,noselect"
 
 -- NOTE: You should make sure your terminal supports this
 opt.termguicolors = true
@@ -44,4 +48,17 @@ opt.tabstop = 2
 opt.expandtab = true
 opt.shiftwidth = 2
 
-opt.relativenumber = true
+-- Where new splits happen
+opt.splitright = true
+opt.splitbelow = true
+
+-- display whitespace
+vim.opt.list = true
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+
+-- nicer substitute preview
+opt.inccommand = "split"
+
+opt.scrolloff = 10
+
+opt.cursorline = true
