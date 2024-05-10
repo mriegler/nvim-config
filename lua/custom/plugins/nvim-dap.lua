@@ -13,7 +13,7 @@ return {
     -- Add your own debuggers here
     "leoluz/nvim-dap-go",
   },
-  keys = function(plugin, keys)
+  keys = function()
     local dap = require "dap"
     return {
       { "<leader>db", dap.toggle_breakpoint, desc = "Toggle Breakpoint" },
@@ -28,7 +28,6 @@ return {
         end,
         desc = "Set Complex Breakpoint",
       },
-      {},
     }
   end,
   config = function()
